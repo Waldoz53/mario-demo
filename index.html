@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Mario Demo</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/mario-demo.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Mario Demo</h1>
+    </div>
+    <div class="container">
+      <div class="webgl-content">
+        <div id="gameContainer" style="width: 960px; height: 600px"></div>
+      </div>
+      <div class="instructions">
+        <h3>Instructions</h3>
+        <ul>
+          <li>Use "A" and "D" to move left and right</li>
+          <li>Use space to jump.</li>
+          <li>Running into enemies will kill them</li>
+          <li>Get to the end!</li>
+        </ul>
+        <p>C# scripts at: <a href='https://github.com/Waldoz53/mario-demo'>github.com/Waldoz53/mario-demo</a></p>
+      </div>
+    </div>
+  </body>
+</html>

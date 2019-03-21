@@ -1,0 +1,27 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.webgl-content {
+  border: 1px solid black;
+}
+
+.webgl-content * {
+  border: 0;
+  margin: 0;
+  padding: 0
+}
+
+.header {
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+.instructions {
+  width: 50%;
+}
